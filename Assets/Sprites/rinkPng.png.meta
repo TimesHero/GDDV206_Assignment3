@@ -1,0 +1,1001 @@
+fileFormatVersion: 2
+guid: 0651c6a9c28aa5547b90d33e3e8afd1e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3158391132330848193
+    second: rinkPng_0
+  - first:
+      213: 7366623912305124709
+    second: rinkPng_1
+  - first:
+      213: 4722776579752635579
+    second: rinkPng_2
+  - first:
+      213: -720754744427039903
+    second: rinkPng_3
+  - first:
+      213: 8365453748592879952
+    second: rinkPng_4
+  - first:
+      213: 1163851958698023659
+    second: rinkPng_5
+  - first:
+      213: -568251304099796798
+    second: rinkPng_6
+  - first:
+      213: 5338900816758033820
+    second: rinkPng_7
+  - first:
+      213: -2393007816852515191
+    second: rinkPng_8
+  - first:
+      213: -1781099053375324936
+    second: rinkPng_9
+  - first:
+      213: 7867704487446580475
+    second: rinkPng_10
+  - first:
+      213: 991048485751267081
+    second: rinkPng_11
+  - first:
+      213: -8429708451984128907
+    second: rinkPng_12
+  - first:
+      213: -654520232306106880
+    second: rinkPng_13
+  - first:
+      213: -6118478048890579706
+    second: rinkPng_14
+  - first:
+      213: -1605511340441272226
+    second: rinkPng_15
+  - first:
+      213: 2937309797680821149
+    second: rinkPng_16
+  - first:
+      213: 1484827219337114138
+    second: rinkPng_17
+  - first:
+      213: -4150701806364746364
+    second: rinkPng_18
+  - first:
+      213: 6737657645842597625
+    second: rinkPng_19
+  - first:
+      213: 4835243230413749371
+    second: rinkPng_20
+  - first:
+      213: -820089034941529235
+    second: rinkPng_21
+  - first:
+      213: -1480560269941514229
+    second: rinkPng_22
+  - first:
+      213: 2866888905424848373
+    second: rinkPng_23
+  - first:
+      213: 9176575531183433145
+    second: rinkPng_24
+  - first:
+      213: 2308680254965940140
+    second: rinkPng_25
+  - first:
+      213: 6624167777525218320
+    second: rinkPng_26
+  - first:
+      213: -402821805428894505
+    second: rinkPng_27
+  - first:
+      213: -4754394822352726134
+    second: rinkPng_28
+  - first:
+      213: 7760664073530281388
+    second: rinkPng_29
+  - first:
+      213: 5698945228623367364
+    second: rinkPng_30
+  - first:
+      213: -7616562479997357642
+    second: rinkPng_31
+  - first:
+      213: 7620186156412397334
+    second: rinkPng_32
+  - first:
+      213: 8174949281582444669
+    second: rinkPng_33
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: rinkPng_0
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 0
+        width: 221
+        height: 796
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cfe250400cd4db20800000000000000
+      internalID: 3158391132330848193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rinkPng_1
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 777
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56568de0b618b3660800000000000000
+      internalID: 7366623912305124709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rinkPng_2
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 759
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbca0b5e64caa8140800000000000000
+      internalID: 4722776579752635579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rinkPng_3
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 752
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 163bf30f06d5ff5f0800000000000000
+      internalID: -720754744427039903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rinkPng_4
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 735
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 059a6ddbcdf081470800000000000000
+      internalID: 8365453748592879952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rinkPng_5
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 423
+        width: 9
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bea9659a035d62010800000000000000
+      internalID: 1163851958698023659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rinkPng_6
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 704
+        width: 8
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c8aafb137a2d18f0800000000000000
+      internalID: -568251304099796798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rinkPng_7
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 685
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9dc7e19106971a40800000000000000
+      internalID: 5338900816758033820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rinkPng_8
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 678
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 986d5cbb1145aced0800000000000000
+      internalID: -2393007816852515191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rinkPng_9
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 649
+        width: 8
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fc77cdf8d34847e0800000000000000
+      internalID: -1781099053375324936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rinkPng_10
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 600
+        width: 8
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfc0004eb83bf2d60800000000000000
+      internalID: 7867704487446580475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rinkPng_11
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 582
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90f9464d859e0cd00800000000000000
+      internalID: 991048485751267081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rinkPng_12
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 570
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 574c06f43d8a30b80800000000000000
+      internalID: -8429708451984128907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rinkPng_13
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 516
+        width: 8
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00e9617015daae6f0800000000000000
+      internalID: -654520232306106880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rinkPng_14
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 401
+        width: 10
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6051ad1b1acc61ba0800000000000000
+      internalID: -6118478048890579706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rinkPng_15
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 415
+        width: 8
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e50032631f318b9e0800000000000000
+      internalID: -1605511340441272226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rinkPng_16
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 386
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d933a0ec2bb63c820800000000000000
+      internalID: 2937309797680821149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rinkPng_17
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 395
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a127b613d7a2b9410800000000000000
+      internalID: 1484827219337114138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rinkPng_18
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 380
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48d9e0fc2beb566c0800000000000000
+      internalID: -4150701806364746364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rinkPng_19
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 382
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f684a66ee7f08d50800000000000000
+      internalID: 6737657645842597625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rinkPng_20
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 65
+        width: 9
+        height: 315
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7c7c6f891c3a1340800000000000000
+      internalID: 4835243230413749371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rinkPng_21
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 280
+        width: 8
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d630e142e557e94f0800000000000000
+      internalID: -820089034941529235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rinkPng_22
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 233
+        width: 8
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b006491674ef37be0800000000000000
+      internalID: -1480560269941514229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rinkPng_23
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 213
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f54b52254c39c720800000000000000
+      internalID: 2866888905424848373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rinkPng_24
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 201
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b5eab673deb95f70800000000000000
+      internalID: 9176575531183433145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rinkPng_25
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 146
+        width: 8
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: caff331c5741a0020800000000000000
+      internalID: 2308680254965940140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rinkPng_26
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 122
+        width: 8
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01cbaff4f75cdeb50800000000000000
+      internalID: 6624167777525218320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rinkPng_27
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 104
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d411a3c3b3e86af0800000000000000
+      internalID: -402821805428894505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rinkPng_28
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 96
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8795b3591ff40eb0800000000000000
+      internalID: -4754394822352726134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rinkPng_29
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 68
+        width: 8
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cad88eb6bda63bb60800000000000000
+      internalID: 7760664073530281388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rinkPng_30
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 52
+        width: 8
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ccc08abd78b61f40800000000000000
+      internalID: 5698945228623367364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rinkPng_31
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 32
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b1703a57c88c4690800000000000000
+      internalID: -7616562479997357642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rinkPng_32
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 25
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6176f4f8fe650c960800000000000000
+      internalID: 7620186156412397334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rinkPng_33
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 0
+        width: 8
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d707e811f01437170800000000000000
+      internalID: 8174949281582444669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      rinkPng_0: 3158391132330848193
+      rinkPng_1: 7366623912305124709
+      rinkPng_10: 7867704487446580475
+      rinkPng_11: 991048485751267081
+      rinkPng_12: -8429708451984128907
+      rinkPng_13: -654520232306106880
+      rinkPng_14: -6118478048890579706
+      rinkPng_15: -1605511340441272226
+      rinkPng_16: 2937309797680821149
+      rinkPng_17: 1484827219337114138
+      rinkPng_18: -4150701806364746364
+      rinkPng_19: 6737657645842597625
+      rinkPng_2: 4722776579752635579
+      rinkPng_20: 4835243230413749371
+      rinkPng_21: -820089034941529235
+      rinkPng_22: -1480560269941514229
+      rinkPng_23: 2866888905424848373
+      rinkPng_24: 9176575531183433145
+      rinkPng_25: 2308680254965940140
+      rinkPng_26: 6624167777525218320
+      rinkPng_27: -402821805428894505
+      rinkPng_28: -4754394822352726134
+      rinkPng_29: 7760664073530281388
+      rinkPng_3: -720754744427039903
+      rinkPng_30: 5698945228623367364
+      rinkPng_31: -7616562479997357642
+      rinkPng_32: 7620186156412397334
+      rinkPng_33: 8174949281582444669
+      rinkPng_4: 8365453748592879952
+      rinkPng_5: 1163851958698023659
+      rinkPng_6: -568251304099796798
+      rinkPng_7: 5338900816758033820
+      rinkPng_8: -2393007816852515191
+      rinkPng_9: -1781099053375324936
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
