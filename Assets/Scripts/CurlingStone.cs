@@ -14,7 +14,12 @@ public class CurlingStone : MonoBehaviour
     public float winThreshold;
     public Slider forceAmountSlider; 
     private bool fluctuate; 
-    public GameObject gameManager; 
+    public GameObject gameManager;
+
+    public int stoneHealth = 15;
+    public float burnTime = 15f;
+    public GameObject fireParticles;
+    public bool burning;
 
     void Start()
     {
@@ -75,6 +80,7 @@ public class CurlingStone : MonoBehaviour
         {
             rb.angularVelocity = Mathf.Lerp(rb.angularVelocity, 0, Time.deltaTime * easeFactor);
         }
+        TryBurn();
     }
 
     private void LaunchCurlingStone()
@@ -102,6 +108,30 @@ public class CurlingStone : MonoBehaviour
             {
                 StartCoroutine(gameManager.GetComponent<GameManager>().ResetStone(gameObject));
             }
+        }
+    }
+    void HitByBeam()
+    {
+        if (stoneHealth > 0)
+        {
+            stoneHealth -= 1;
+        }
+    }
+
+    void TryBurn()
+    {
+        if (stoneHealth == 0 && fireParticles.activeInHierarchy != true)
+        {
+            fireParticles.SetActive(true);
+            burning = true;
+        }
+        if (burning == true)
+        {
+            burnTime -= 0.1f;
+        }
+        if (burnTime <= 0)
+        {
+            StartCoroutine(gameManager.GetComponent<GameManager>().ResetStone(gameObject));
         }
     }
 }
