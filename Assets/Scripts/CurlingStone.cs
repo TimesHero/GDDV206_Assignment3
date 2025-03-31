@@ -80,7 +80,6 @@ public class CurlingStone : MonoBehaviour
         {
             rb.angularVelocity = Mathf.Lerp(rb.angularVelocity, 0, Time.deltaTime * easeFactor);
         }
-        TryBurn();
     }
 
     private void LaunchCurlingStone()
@@ -109,6 +108,7 @@ public class CurlingStone : MonoBehaviour
                 StartCoroutine(gameManager.GetComponent<GameManager>().ResetStone(gameObject));
             }
         }
+        TryBurn();
     }
     void HitByBeam()
     {
