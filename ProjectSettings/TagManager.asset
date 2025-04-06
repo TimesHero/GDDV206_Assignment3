@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Slider
   - WinArea
+  - CurlingStone
   layers:
   - Default
   - TransparentFX

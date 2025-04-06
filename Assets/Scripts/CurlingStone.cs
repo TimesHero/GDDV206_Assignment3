@@ -7,19 +7,20 @@ public class CurlingStone : MonoBehaviour
     public float easeFactor;
     private float holdTime = 0f;
     private bool isHeld = false;
-    private Rigidbody2D rb;
+    public Rigidbody2D rb;
     private Vector2 launchDirection = Vector2.up; // Always launch upwards
-    private bool beenLaunched = false; 
+    public bool beenLaunched = false; 
     public Transform winningTransform;
     public float winThreshold;
     public Slider forceAmountSlider; 
     private bool fluctuate; 
     public GameObject gameManager;
-
     public int stoneHealth = 15;
     public float burnTime = 15f;
     public GameObject fireParticles;
     public bool burning;
+    public bool stoppedMoving = false;
+    public bool blocker; 
 
     void Start()
     {
@@ -82,14 +83,14 @@ public class CurlingStone : MonoBehaviour
         }
     }
 
-    private void LaunchCurlingStone()
+    public void LaunchCurlingStone()
     {
         beenLaunched=true; 
         float force = Mathf.Clamp(holdTime * maxForce, 0f, maxForce);
         rb.AddForce(launchDirection * force, ForceMode2D.Impulse);
     }
 
-    void FixedUpdate()
+    public void FixedUpdate()
     {
         if (rb.linearVelocity.magnitude > 0)//Movement and ease out code
         {
@@ -99,18 +100,23 @@ public class CurlingStone : MonoBehaviour
         if (rb.linearVelocity.magnitude < 0.1f && beenLaunched)//when the stone is done moving
         {
             float distanceToWinningPosition = Vector2.Distance(transform.position, winningTransform.position);
-            if (distanceToWinningPosition < winThreshold)
+            if (stoppedMoving==false)
             {
-                gameManager.GetComponent<GameManager>().WinGame();
+                Debug.Log(stoppedMoving);
+                if (distanceToWinningPosition < winThreshold)
+                {
+                    gameManager.GetComponent<GameManager>().WinGame();
+                }
+                else
+                {
+                    StartCoroutine(gameManager.GetComponent<GameManager>().ResetStone(gameObject,false));
+                }
             }
-            else
-            {
-                StartCoroutine(gameManager.GetComponent<GameManager>().ResetStone(gameObject));
-            }
+            stoppedMoving=true;
         }
         TryBurn();
     }
-    void HitByBeam()
+    public virtual void HitByBeam()
     {
         if (stoneHealth > 0)
         {
@@ -118,7 +124,7 @@ public class CurlingStone : MonoBehaviour
         }
     }
 
-    void TryBurn()
+    public virtual void TryBurn()
     {
         if (stoneHealth == 0 && fireParticles.activeInHierarchy != true)
         {
@@ -131,7 +137,7 @@ public class CurlingStone : MonoBehaviour
         }
         if (burnTime <= 0)
         {
-            StartCoroutine(gameManager.GetComponent<GameManager>().ResetStone(gameObject));
+            StartCoroutine(gameManager.GetComponent<GameManager>().ResetStone(gameObject,true));
         }
     }
 }

@@ -30,7 +30,7 @@ public class CameraFollow : MonoBehaviour
             shakeOffset = Vector3.zero; // Reset shake offset when the shake ends
         }
 
-        if (!stopFollowing)
+        if (!stopFollowing && transform.position!=null)
         {
            
             Vector3 targetCamPos = target.position + offset + shakeOffset;
@@ -40,17 +40,15 @@ public class CameraFollow : MonoBehaviour
 
     private void ApplyShake()
     {
-        // Apply random shake offset within the magnitude range
         shakeOffset = new Vector3(Random.Range(-shakeMagnitude, shakeMagnitude), Random.Range(-shakeMagnitude, shakeMagnitude), 0);
 
-        // Reduce the shake duration
         shakeDuration -= Time.deltaTime * shakeFrequency;
 
-        // If shake duration ends, stop the shake
+      
         if (shakeDuration <= 0)
         {
             shakeDuration = 0;
-            shakeOffset = Vector3.zero; // Reset shake offset after shaking
+            shakeOffset = Vector3.zero;
         }
     }
 
