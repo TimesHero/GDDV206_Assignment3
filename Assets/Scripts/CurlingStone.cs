@@ -20,7 +20,15 @@ public class CurlingStone : MonoBehaviour
     public GameObject fireParticles;
     public bool burning;
     public bool stoppedMoving = false;
-    public bool blocker; 
+    public bool blocker;
+
+    public AudioSource launchAudioSource;
+    public AudioClip launchSfx;
+    public AudioSource winAudioSource;
+    public AudioClip winSfx;
+    public AudioSource resetAudioSource;
+    public AudioClip resetSfx;
+    bool playedYet;
 
     void Start()
     {
@@ -88,6 +96,8 @@ public class CurlingStone : MonoBehaviour
         beenLaunched=true; 
         float force = Mathf.Clamp(holdTime * maxForce, 0f, maxForce);
         rb.AddForce(launchDirection * force, ForceMode2D.Impulse);
+        launchAudioSource.PlayOneShot(launchSfx);
+        playedYet = false;
     }
 
     public void FixedUpdate()
@@ -106,10 +116,12 @@ public class CurlingStone : MonoBehaviour
                 if (distanceToWinningPosition < winThreshold)
                 {
                     gameManager.GetComponent<GameManager>().WinGame();
+                    DoSound(winAudioSource, winSfx);
                 }
                 else
                 {
                     StartCoroutine(gameManager.GetComponent<GameManager>().ResetStone(gameObject,false));
+                    DoSound(resetAudioSource, resetSfx);
                 }
             }
             stoppedMoving=true;
@@ -138,6 +150,15 @@ public class CurlingStone : MonoBehaviour
         if (burnTime <= 0)
         {
             StartCoroutine(gameManager.GetComponent<GameManager>().ResetStone(gameObject,true));
+        }
+    }
+
+    void DoSound(AudioSource CurrentAS, AudioClip CurrentAC)
+    {
+        if (playedYet != true)
+        {
+            CurrentAS.PlayOneShot(CurrentAC);
+            playedYet = true;
         }
     }
 }
