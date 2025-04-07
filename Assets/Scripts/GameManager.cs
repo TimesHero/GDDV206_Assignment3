@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using TMPro;
 using Unity.Mathematics;
 using UnityEngine;
 
@@ -15,11 +16,10 @@ public class GameManager : MonoBehaviour
     public Dictionary<GameObject, int> curlingStoneInventoryDictionary = new Dictionary<GameObject, int>();
     private bool normalStonesUsed;
     private bool blockerStonesUsed; 
-
-
     private int currentStoneIndex = 0;  
     private GameObject currentStone;    
-    private 
+    public TextMeshProUGUI normalStones; 
+    public TextMeshProUGUI blockerStones; 
     void Start()
     {
         curlingStoneInventoryDictionary.Add(stonePrefab, 4);
@@ -39,6 +39,7 @@ public class GameManager : MonoBehaviour
         {
             ChangeSelectedStone(scroll);
         }
+
     }
 
     private void ChangeSelectedStone(float scrollInput)
@@ -124,6 +125,7 @@ public class GameManager : MonoBehaviour
     {
         GameObject itemToReduce = GetPrefabByIndex(index);
         curlingStoneInventoryDictionary[itemToReduce]--;
+        
 
     }
 
