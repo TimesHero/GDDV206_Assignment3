@@ -30,6 +30,10 @@ public class CurlingStone : MonoBehaviour
     public AudioClip resetSfx;
     bool playedYet;
 
+    private float currentRotation = 0f;
+    public float rotationSpeed = 100f;
+    public float maxRotationAngle = 15f;
+
     void Start()
     {
         gameManager = GameObject.FindGameObjectWithTag("GameController");
@@ -63,6 +67,33 @@ public class CurlingStone : MonoBehaviour
 
     void Update()
     {
+        if (!beenLaunched)
+        {
+            float rotationInput = 0f;
+
+            if (Input.GetKey(KeyCode.Q))
+            {
+                rotationInput = 1f; // Left
+            }
+            else if (Input.GetKey(KeyCode.E))
+            {
+                rotationInput = -1f; // Right
+            }
+
+            if (rotationInput != 0f)
+            {
+                float deltaRotation = rotationInput * rotationSpeed * Time.deltaTime;
+                currentRotation = Mathf.Clamp(currentRotation + deltaRotation, -maxRotationAngle, maxRotationAngle);
+                transform.rotation = Quaternion.Euler(0f, 0f, currentRotation);
+
+                // Also rotate the launch direction based on new angle
+                float angleInRadians = currentRotation * Mathf.Deg2Rad;
+                launchDirection = new Vector2(Mathf.Sin(angleInRadians), Mathf.Cos(angleInRadians)).normalized;
+            }
+        }
+        
+        
+        
         if (isHeld)
         {
             if (holdTime>=1)
@@ -93,22 +124,26 @@ public class CurlingStone : MonoBehaviour
 
     public void LaunchCurlingStone()
     {
-        beenLaunched=true; 
+        beenLaunched = true;
         float force = Mathf.Clamp(holdTime * maxForce, 0f, maxForce);
-        rb.AddForce(launchDirection * force, ForceMode2D.Impulse);
+        float angleInRadians = transform.eulerAngles.z * Mathf.Deg2Rad;
+        Vector2 launchDir = new Vector2(Mathf.Sin(-angleInRadians), Mathf.Cos(-angleInRadians)).normalized;
+
+        rb.AddForce(launchDir * force, ForceMode2D.Impulse);
+
         launchAudioSource.PlayOneShot(launchSfx);
-        gameManager.GetComponent<GameManager>().stoneLaunched=true; 
+        gameManager.GetComponent<GameManager>().stoneLaunched = true;
         playedYet = false;
     }
 
     public void FixedUpdate()
     {
-        if (rb.linearVelocity.magnitude > 0)//Movement and ease out code
+        if (rb.linearVelocity.magnitude > 0)
         {
             rb.linearVelocity = Vector2.Lerp(rb.linearVelocity, Vector2.zero, Time.deltaTime * easeFactor);
         }
 
-        if (rb.linearVelocity.magnitude < 0.1f && beenLaunched)//when the stone is done moving
+        if (rb.linearVelocity.magnitude < 0.1f && beenLaunched)
         {
             float distanceToWinningPosition = Vector2.Distance(transform.position, winningTransform.position);
             if (stoppedMoving==false)

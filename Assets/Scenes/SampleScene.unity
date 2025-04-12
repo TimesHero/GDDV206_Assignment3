@@ -2935,6 +2935,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wind
       objectReference: {fileID: 0}
+    - target: {fileID: 5286102322592342086, guid: e1fd3a52513b9114eafe2e15c84123a5, type: 3}
+      propertyPath: m_ForceMagnitude
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 5753479319068156758, guid: e1fd3a52513b9114eafe2e15c84123a5, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
@@ -4220,6 +4224,10 @@ PrefabInstance:
     - target: {fileID: 4596791805861330752, guid: e1fd3a52513b9114eafe2e15c84123a5, type: 3}
       propertyPath: m_Name
       value: Wind 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5286102322592342086, guid: e1fd3a52513b9114eafe2e15c84123a5, type: 3}
+      propertyPath: m_ForceMagnitude
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5753479319068156758, guid: e1fd3a52513b9114eafe2e15c84123a5, type: 3}
       propertyPath: m_LocalRotation.w
