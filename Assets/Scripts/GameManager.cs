@@ -1,8 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using TMPro;
-using Unity.Mathematics;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -20,6 +18,7 @@ public class GameManager : MonoBehaviour
     private GameObject currentStone;    
     public TextMeshProUGUI normalStones; 
     public TextMeshProUGUI blockerStones; 
+    public bool stoneLaunched; 
     void Start()
     {
         curlingStoneInventoryDictionary.Add(stonePrefab, 4);
@@ -35,7 +34,7 @@ public class GameManager : MonoBehaviour
     {
 
         float scroll = Input.GetAxis("Mouse ScrollWheel");
-        if (scroll != 0)
+        if (scroll != 0 &&stoneLaunched==false)
         {
             ChangeSelectedStone(scroll);
         }
@@ -75,13 +74,15 @@ public class GameManager : MonoBehaviour
    public IEnumerator ResetStone(GameObject stone, bool burned)
     {
         yield return new WaitForSeconds(1f);
-
         if (burned)
         {
             Destroy(stone);
         }
 
         ReduceByIndex(currentStoneIndex);
+        stoneLaunched=false; 
+        normalStones.text = "Ships: " + curlingStoneInventoryDictionary[stonePrefab].ToString();
+        blockerStones.text = "Blockers: " + curlingStoneInventoryDictionary[blockerStonePrefab].ToString();
         if (HasStoneType(currentStoneIndex)==false)
         {
             if (currentStoneIndex==0)

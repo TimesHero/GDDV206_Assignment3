@@ -97,6 +97,7 @@ public class CurlingStone : MonoBehaviour
         float force = Mathf.Clamp(holdTime * maxForce, 0f, maxForce);
         rb.AddForce(launchDirection * force, ForceMode2D.Impulse);
         launchAudioSource.PlayOneShot(launchSfx);
+        gameManager.GetComponent<GameManager>().stoneLaunched=true; 
         playedYet = false;
     }
 
