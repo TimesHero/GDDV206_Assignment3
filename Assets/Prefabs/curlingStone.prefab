@@ -112,7 +112,7 @@ MonoBehaviour:
   winThreshold: 4
   forceAmountSlider: {fileID: 0}
   gameManager: {fileID: 0}
-  stoneHealth: 15
+  stoneHealth: 1
   burnTime: 15
   fireParticles: {fileID: 8103286800563213725}
   burning: 0
@@ -124,6 +124,8 @@ MonoBehaviour:
   winSfx: {fileID: 8300000, guid: 9cc43f27561ed374a94df642a2cde8e1, type: 3}
   resetAudioSource: {fileID: 7691035393510431667}
   resetSfx: {fileID: 8300000, guid: f848956c935f8174f941d7b9882d8cb6, type: 3}
+  rotationSpeed: 100
+  maxRotationAngle: 15
 --- !u!50 &7712893669498129929
 Rigidbody2D:
   serializedVersion: 5

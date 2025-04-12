@@ -26,6 +26,7 @@ public class Laser : MonoBehaviour
             if(hit.transform.gameObject.layer == 3)
             {
                 hit.transform.SendMessage("HitByBeam");
+                Debug.Log("HIT");
             }
             beamDifference = hit.transform.position - laserOrigin.position;
         }
