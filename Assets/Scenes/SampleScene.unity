@@ -2884,6 +2884,14 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1115339327012622686, guid: e1fd3a52513b9114eafe2e15c84123a5, type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 1115339327012622686, guid: e1fd3a52513b9114eafe2e15c84123a5, type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 0.74
+      objectReference: {fileID: 0}
+    - target: {fileID: 1115339327012622686, guid: e1fd3a52513b9114eafe2e15c84123a5, type: 3}
       propertyPath: ColorModule.gradient.maxGradient.key1.a
       value: 0
       objectReference: {fileID: 0}
@@ -2937,7 +2945,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5286102322592342086, guid: e1fd3a52513b9114eafe2e15c84123a5, type: 3}
       propertyPath: m_ForceMagnitude
-      value: 6
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5753479319068156758, guid: e1fd3a52513b9114eafe2e15c84123a5, type: 3}
       propertyPath: m_LocalRotation.w
