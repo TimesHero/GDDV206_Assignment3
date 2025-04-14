@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour
     public bool stoneLaunched; 
     void Start()
     {
+        Time.timeScale=1; 
         curlingStoneInventoryDictionary.Add(stonePrefab, 4);
         curlingStoneInventoryDictionary.Add(blockerStonePrefab, 4);
 
@@ -110,10 +111,12 @@ public class GameManager : MonoBehaviour
 
     public void WinGame()
     {
+        Time.timeScale = 0; 
         gameWinPanel.SetActive(true);
     }
     public void LoseGame()
     {
+        Time.timeScale = 0; 
         gameLosePanel.SetActive(true);
     }
     private GameObject GetPrefabByIndex(int index)

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: bf2d5248b06bb2943a144197ba27b0bc
+guid: 1feca3dae0b656b4c945b15364f058df
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3357759496514316728
-    second: enemy_meteor3_0
+      213: 1831172643149151373
+    second: emitter_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,12 +46,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 10
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: enemy_meteor3_0
+      name: emitter_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 16
-        height: 16
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8b92eeec878299e20800000000000000
-      internalID: 3357759496514316728
+      spriteID: d8c715521d1a96910800000000000000
+      internalID: 1831172643149151373
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      enemy_meteor3_0: 3357759496514316728
+      emitter_0: 1831172643149151373
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

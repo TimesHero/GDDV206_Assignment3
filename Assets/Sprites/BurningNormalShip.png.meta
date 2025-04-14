@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: bf2d5248b06bb2943a144197ba27b0bc
+guid: c42825121d2a827468496d3119a8e533
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3357759496514316728
-    second: enemy_meteor3_0
+      213: 2991484175955945257
+    second: BurningNormalShip_0
+  - first:
+      213: -5025650438836246649
+    second: BurningNormalShip_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,12 +49,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 10
+  spritePixelsToUnits: 45
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -100,13 +103,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: enemy_meteor3_0
+      name: BurningNormalShip_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 16
-        height: 16
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +118,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8b92eeec878299e20800000000000000
-      internalID: 3357759496514316728
+      spriteID: 9276e0b2203e38920800000000000000
+      internalID: 2991484175955945257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BurningNormalShip_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78721eb8d8d414ab0800000000000000
+      internalID: -5025650438836246649
       vertices: []
       indices: 
       edges: []
@@ -125,7 +150,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 4f556ba247318af4eb2a14fb85e1accf
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +160,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      enemy_meteor3_0: 3357759496514316728
+      BurningNormalShip_0: 2991484175955945257
+      BurningNormalShip_1: -5025650438836246649
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

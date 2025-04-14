@@ -33,6 +33,9 @@ public class CurlingStone : MonoBehaviour
     private float currentRotation = 0f;
     public float rotationSpeed = 100f;
     public float maxRotationAngle = 15f;
+    Animator myAnim;
+    public GameObject explosionParticles; 
+    private bool exploded = false; 
 
     void Start()
     {
@@ -45,6 +48,7 @@ public class CurlingStone : MonoBehaviour
 
         rb = GetComponent<Rigidbody2D>();
         forceAmountSlider.value = 0f;
+        myAnim = GetComponent<Animator>();
     }
 
     void OnMouseDown()
@@ -85,10 +89,8 @@ public class CurlingStone : MonoBehaviour
                 float deltaRotation = rotationInput * rotationSpeed * Time.deltaTime;
                 currentRotation = Mathf.Clamp(currentRotation + deltaRotation, -maxRotationAngle, maxRotationAngle);
                 transform.rotation = Quaternion.Euler(0f, 0f, currentRotation);
-
-                // Also rotate the launch direction based on new angle
-                float angleInRadians = currentRotation * Mathf.Deg2Rad;
-                launchDirection = new Vector2(Mathf.Sin(angleInRadians), Mathf.Cos(angleInRadians)).normalized;
+                float angle= currentRotation * Mathf.Deg2Rad;
+                launchDirection = new Vector2(Mathf.Sin(angle), Mathf.Cos(angle)).normalized;
             }
         }
         
@@ -176,6 +178,7 @@ public class CurlingStone : MonoBehaviour
     {
         if (stoneHealth == 0 && fireParticles.activeInHierarchy != true)
         {
+            myAnim.SetBool("Burning", true);
             fireParticles.SetActive(true);
             burning = true;
         }
@@ -183,9 +186,19 @@ public class CurlingStone : MonoBehaviour
         {
             burnTime -= 0.1f;
         }
-        if (burnTime <= 0)
+        if (burnTime <= 0 && exploded==false)
         {
-            StartCoroutine(gameManager.GetComponent<GameManager>().ResetStone(gameObject,true));
+            exploded=true;
+            Instantiate(explosionParticles, transform.position, transform.rotation);
+            gameObject.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0f);
+            if (stoppedMoving==false)
+            {
+                StartCoroutine(gameManager.GetComponent<GameManager>().ResetStone(gameObject,true));
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
         }
     }
 

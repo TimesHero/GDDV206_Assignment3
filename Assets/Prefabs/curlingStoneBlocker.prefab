@@ -373,8 +373,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1544977667909174819, guid: b9b4611d9d5e41141b3c84b40a014158, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.9039402, a: 1}
+  m_Sprite: {fileID: 8325393217645546772, guid: 39b80616764c0ab4196b1fff830f9716, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -411,11 +411,13 @@ MonoBehaviour:
   stoppedMoving: 0
   blocker: 0
   launchAudioSource: {fileID: 2873634210124730330}
-  launchSfx: {fileID: 8300000, guid: 6ef216c9df0921e4ea00c584960e2a39, type: 3}
+  launchSfx: {fileID: 8300000, guid: ab9f761f471777a4b9bb2fd57220d0a0, type: 3}
   winAudioSource: {fileID: 5347170031736330172}
   winSfx: {fileID: 8300000, guid: 9cc43f27561ed374a94df642a2cde8e1, type: 3}
   resetAudioSource: {fileID: 4910224499943882278}
   resetSfx: {fileID: 8300000, guid: f848956c935f8174f941d7b9882d8cb6, type: 3}
+  rotationSpeed: 100
+  maxRotationAngle: 15
 --- !u!50 &986675874670431846
 Rigidbody2D:
   serializedVersion: 5
